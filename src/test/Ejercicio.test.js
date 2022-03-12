@@ -3,21 +3,13 @@ import { loginSincrono, logout } from "../actions/actionLogin";
 import { loginReducer } from "../reducers/loginReducer";
 import { types } from "../types/types";
 
-describe("Verificar types", () => {
+describe("Pruebas de ejercicio", () => {
   // Test de types
   test("comparar objetos", () => {
     expect(types).toEqual({
       login: "login",
       register: "register",
       logout: "logout",
-
-      // taskAddNew: '[Task] New taks',
-      // taskActive: '[Task] Active taks',
-      // taskLoad: '[Task] Load taks',
-      // taskUpdate: '[Task] Update taks',
-      // taskDelete: '[Task] Delete taks',
-      // taskClear: '[Task] Clear taks',
-      // taskLogoutClean: '[Task] Logout taks',
     });
   });
   // Test de reducers login
